@@ -1,0 +1,6 @@
+sudo: required
+services:
+    - docker
+
+berfore_install:
+    - docker build -t jasonlehmann/DockerTests -f Dockerfile.dev . 
